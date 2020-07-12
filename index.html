@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Marvel Movies</title>
+   <link rel="stylesheet" href="style/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body> 
+   <div class="loader-bg">
+      <div class="loader">
+         <svg version="1.1" id="preloader" x="0px" y="0px" width="240px" height="120px" viewBox="0 0 240 120">
+
+            <style type="text/css" >
+                    #plug,
+                    #socket { fill:#FDB515 }
+            
+                    #loop-normal { fill: none; stroke: #FDB515; stroke-width: 12 }
+                    #loop-offset { display: none }
+            </style>
+            
+            <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+            L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+                <animate attributeName="stroke-dasharray" attributeType="XML"
+                    from="500, 50"  to="450 50"
+                    begin="0s" dur="2s"
+                    repeatCount="indefinite"/>
+                <animate attributeName="stroke-dashoffset" attributeType="XML"
+                    from="-40"  to="-540"
+                    begin="0s" dur="2s"
+                    repeatCount="indefinite"/>  
+            </path>
+              
+            <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+            L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5
+            L146.48,87.02z"/>
+              
+            <path id="socket" d="M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z"/>  
+              
+            <path id="plug" d="M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z"/>
+              
+            <animateMotion
+                xlink:href="#plug"
+                dur="2s"
+                rotate="auto"
+                repeatCount="indefinite"
+                calcMode="linear"
+                keyTimes="0;1"    
+                keySplines="0.42, 0, 0.58, 1">
+                <mpath xlink:href="#loop-normal"/>
+            </animateMotion>
+              
+            <animateMotion             
+                xlink:href="#socket"
+                dur="2s"
+                rotate="auto"
+                repeatCount="indefinite"
+                calcMode="linear"
+                keyTimes="0;1"
+                keySplines="0.42, 0, 0.58, 1">
+                <mpath xlink:href="#loop-offset"/>
+            </animateMotion>  
+            </svg>
+      </div>
+   </div>
+   <div class="container">
+      <div class="row">
+            <h1 class="marvel">Marvel studios</h1>
+            <p>Here are the marvels movies listed below</p>
+            <h2 id="yy"></h2>
+
+            <a href="#image"><img src="./images/marvel/img1.webp" alt="" class="image"></a>
+            <div id="image" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head"> Marvel</p>
+                     <p class="titles">Title: Iron Man 1 (2008)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.9/10</p>
+                     <p class="director" style="color: #ece7dc; font-size: 18px; font-weight: 700;">Director: Jon Favreau</p>
+                     <p class="stars">Stars: Robert Downey Jr., Gwyneth Paltrow, Terrence Howard, Jeff Bridges</p>
+                     <p class="description"><span>Description: </span>After being held captive in an
+                        Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight
+                        evil.</p>
+                  </center>
+               </div>
+            </div>
+
+            <a href="#image2"><img src="./images/marvel/img2.webp" alt="" class="image"></a>
+            <div id="image2" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: The Incrideble Hulk (2008)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">6.7/10</p>
+                     <p class="director">Director: Louis Leterrier</p>
+                     <p class="stars">Stars: Edward Norton, Liv Tyler, Tim Roth, William Hurt</p>
+                     <p class="description"><span>Description: </span>Bruce Banner, a scientist
+                        on the run from the U.S. Government, must find a cure for the monster he turns into whenever he
+                        loses his temper.</p>
+
+                  </center>
+               </div>
+            </div>
+            <a href="#image3"><img src="./images/marvel/img3.webp" alt="" class="image"></a>
+            <div id="image3" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Iron Man 2 (2010)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7/10</p>
+                     <p class="director">Director: Jon Favreau</p>
+                     <p class="stars">Stars: Robert Downey Jr., Mickey Rourke, Gwyneth Paltrow, Don Cheadle</p>
+                     <p class="description"><span>Description: </span>With the world now aware of
+                        his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful
+                        mad man with ties to his father's legacy.</p>
+
+                  </center>
+               </div>
+            </div>
+            <a href="#image4"><img src="./images/marvel/img4.webp" alt="" class="image"></a>
+            <div id="image4" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Thor (2011)</p>
+                     <p class="feature">Action, Adventure, Fantasy</p>
+                     <p class="rating">7/10</p>
+                     <p class="director">Director: Kenneth Branagh</p>
+                     <p class="stars">Stars: Chris Hemsworth, Anthony Hopkins, Natalie Portman, Tom Hiddleston</p>
+                     <p class="description"><span>Description: </span>The powerful but arrogant
+                        god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes
+                        one of their finest defenders.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image5"><img src="./images/marvel/img7.webp" alt="" class="image"></a>
+            <div id="image5" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Captain America -The First Avenger (2011)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">6.9/10</p>
+                     <p class="director">Director: Joe Johnston</p>
+                     <p class="stars">Stars: Chris Evans, Hugo Weaving, Samuel L. Jackson,Hayley Atwell</p>
+                     <p class="description"><span>Description: </span>Steve Rogers, a rejected
+                        military soldier, transforms into Captain America after taking a dose of a "Super-Soldier
+                        serum". Being Captain America to take down a war monger.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image6"><img src="./images/marvel/img6.webp" alt="" class="image"></a>
+            <div id="image6" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: The Avengers (2012)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">8/10</p>
+                     <p class="director">Director: Joss Whedon</p>
+                     <p class="stars">Stars: Robert Downey Jr., Chris Evans, Scarlett Johansson, Jeremy Renner</p>
+                     <p s class="description"><span>Description: </span>Earth's mightiest heroes
+                        must come together and learn to fight as a team if they are going to stop the mischievous Loki
+                        and his alien army from enslaving humanity.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image7"><img src="./images/marvel/img5.webp" alt="" class="image"></a>
+            <div id="image7" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Iron Man 3 (2013)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.2/10</p>
+                     <p class="director">Director: Shane Black</p>
+                     <p class="stars">Stars: Robert Downey Jr., Guy Pearce, Gwyneth Paltrow,Don Cheadle</p>
+                     <p s class="description"><span>Description: </span>When Tony Stark's world is
+                        torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and
+                        retribution.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image8"><img src="./images/marvel/img8.webp" alt="" class="image"></a>
+            <div id="image8" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Thor -The Dark World (2013)</p>
+                     <p class="feature"> Action, Adventure, Fantasy</p>
+                     <p class="rating">6.9/10</p>
+                     <p class="director">Director: Jon Favreau</p>
+                     <p class="stars">Stars: Chris Hemsworth, Natalie Portman, Tom Hiddleston, Stellan Skarsgård</p>
+                     <p s class="description"><span>Description: </span>When the Dark Elves attempt
+                        to plunge the universe into darkness, Thor must embark on a perilous and personal journey that
+                        will reunite him with doctor Jane Foster.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image9"><img src="./images/marvel/img9.webp" alt="" class="image"></a>
+            <div id="image9" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Captain America -The Winter Soldier (2014)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.7/10</p>
+                     <p class="director">Director: Anthony Russo, Joe Russo</p>
+                     <p class="stars">Stars: Chris Evans, Samuel L. Jackson, Scarlett Johansson, Robert Redford</p>
+                     <p s class="description"><span>Description: </span>As Steve Rogers teams up
+                        with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, an assassin known as the Winter
+                        Soldier.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image10"><img src="./images/marvel/img10.webp" alt="" class="image"></a>
+            <div id="image10" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Gaurdians of the Galaxy (2014)</p>
+                     <p class="feature">Action, Adventure, Comedy</p>
+                     <p class="rating">8/10</p>
+                     <p class="director">Director: James Gunn</p>
+                     <p class="stars">Stars: Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana</p>
+                     <p s class="description"><span>Description: </span>&nbsp;A group of intergalactic
+                        criminals must pull together to stop a fanatical warrior with plans to purge the universe.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image1112"><img src="./images/marvel/img11.webp" alt="" class="image"></a>
+            <div id="image1112" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Avengers -Age of Ultrons (2015)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.3/10</p>
+                     <p class="director">Director: Joss Whedon</p>
+                     <p class="stars">Stars: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</p>
+                     <p class="description"><span>Description: </span>When Tony Stark and Bruce
+                        Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong
+                        heroes to stop the villainous Ultron from enacting his terrible plan.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image12"><img src="./images/marvel/img12.webp" alt="" class="image"></a>
+            <div id="image12" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Ant-Man (2015)</p>
+                     <p class="feature">Action, Adventure, Comedy</p>
+                     <p class="rating">7.3/10</p>
+                     <p class="director">Director: Peyton Reed</p>
+                     <p class="stars">Stars: Paul Rudd, Michael Douglas, Corey Stoll, Evangeline Lilly</p>
+                     <p class="description"><span>Description: </span>Armed with a super-suit
+                        with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang
+                        must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that
+                        will save the world.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image13"><img src="./images/marvel/img13.webp" alt="" class="image"></a>
+            <div id="image13" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Captain America -Civil War (2016)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.8/10</p>
+                     <p class="director">Director: Anthony Russo, Joe Russo</p>
+                     <p class="stars">Stars: Chris Evans, Robert Downey Jr., Scarlett Johansson, Sebastian Stan</p>
+                     <p s class="description"><span>Description: </span>Political involvement in
+                        the Avengers' affairs causes a rift between Captain America and Iron Man.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image14"><img src="./images/marvel/img14.webp" alt="" class="image"></a>
+            <div id="image14" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Doctor Strange (2016)</p>
+                     <p class="feature"> Action, Adventure, Fantasy</p>
+                     <p class="rating">7.5/10</p>
+                     <p class="director">Director: Scott Derrickson</p>
+                     <p class="stars">Stars: Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong</p>
+                     <p s class="description"><span>Description: </span>While on a journey of
+                        physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic
+                        arts.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image15"><img src="./images/marvel/img15.webp" alt="" class="image"></a>
+            <div id="image15" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Gaurdians of the Galaxy -Vol.2 (2017)</p>
+                     <p class="feature">Action, Adventure, Comedy</p>
+                     <p class="rating">7.6/10</p>
+                     <p class="director">Director: James Gunn</p>
+                     <p class="stars">Stars: Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel</p>
+                     <p s class="description"><span>Description: </span>The Guardians struggle to
+                        keep together as a team while dealing with their personal family issues, notably Star-Lord's
+                        encounter with his father the ambitious celestial being Ego.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image16"><img src="./images/marvel/img16.webp" alt="" class="image"></a>
+            <div id="image16" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head"> Marvel</p>
+                     <p class="titles">Title: Spider-Man -Home Coming (2017)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.4/10</p>
+                     <p class="director">Director: Jon Watts</p>
+                     <p class="stars">Stars: Tom Holland, Michael Keaton, Robert Downey Jr., Marisa Tomei</p>
+                     <p class="description"><span>Description:</span>
+                        Peter Parker balances his life as an ordinary high school student in Queens with his superhero
+                        alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New
+                        York City.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image17"><img src="./images/marvel/img17.webp" alt="" class="image"></a>
+            <div id="image17" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Thor -Ragnarok (2017)</p>
+                     <p class="feature">Action, Adventure, Comedy</p>
+                     <p class="rating">7.9/10</p>
+                     <p class="director">Director: Taika Waititi</p>
+                     <p class="stars">Stars: Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Mark Ruffalo</p>
+                     <p s class="description"><span>Description: </span>Imprisoned on the planet Sakaar,
+                        Thor must race against time to return to Asgard and stop Ragnarök, the destruction of his world,
+                        at the hands of the powerful and ruthless villain Hela.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image18"><img src="./images/marvel/img18.webp" alt="" class="image"></a>
+            <div id="image18" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Black Panther (2018)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.3/10</p>
+                     <p class="director">Director: Ryan Coogler</p>
+                     <p class="stars">Stars: Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira</p>
+                     <p s class="description"><span>Description: </span>T'Challa, heir to the hidden but
+                        advanced kingdom of Wakanda, must step forward to lead his people into a new future and must
+                        confront a challenger from his country's past.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image20"><img src="./images/marvel/img19.webp" alt="" class="image"></a>
+            <div id="image20" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Avengers -Infinity war (2018)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">8.4/10</p>
+                     <p class="director">Director: Anthony Russo, Joe Russo</p>
+                     <p class="stars">Stars: Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans</p>
+                     <p s class="description"><span>Description: </span>The Avengers and their allies
+                        must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of
+                        devastation and ruin puts an end to the universe.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image19"><img src="./images/marvel/img20.webp" alt="" class="image"></a>
+            <div id="image19" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Ant-man and Wasp (2018)</p>
+                     <p class="feature">Action, Adventure, Comedy</p>
+                     <p class="rating">7.1/10</p>
+                     <p class="director">Director: Peyton Reed</p>
+                     <p class="stars">Stars: Paul Rudd, Evangeline Lilly, Michael Peña, Walton Goggins</p>
+                     <p s class="description"><span>Description:</span>As Scott Lang balances being both
+                        a superhero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that
+                        finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image21"><img src="./images/marvel/img21.webp" alt="" class="image"></a>
+            <div id="image21" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Captain Marvel (2019)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">6.9/10</p>
+                     <p class="director">Director: Anna Boden, Ryan Fleck </p>
+                     <p class="stars">Stars: Brie Larson, Samuel L. Jackson, Ben Mendelsohn, Jude Law</p>
+                     <p class="description"><span>Description: </span>Carol Danvers becomes one of the
+                        universe's most powerful heroes when Earth is caught in the middle of a galactic war between two
+                        alien races.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image22"><img src="./images/marvel/img22.webp" alt="" class="image"></a>
+            <div id="image22" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Avengers -Endgame( 2019)</p>
+                     <p class="feature">Action, Adventure, Drama</p>
+                     <p class="rating">8.4/10</p>
+                     <p class="director">Director: Anthony Russo, Joe Russo</p>
+                     <p class="stars">Stars: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</p>
+                     <p class="description"><span>Description: </span>After the devastating events of
+                        Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the
+                        Avengers assemble once more in order to reverse Thanos' actions and restore balance to the
+                        universe.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image23"><img src="./images/marvel/img23.webp" alt="" class="image"></a>
+            <div id="image23" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head"> Marvel</p>
+                     <p class="titles">Title: Spiderman -Far From Home (2019)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">7.5/10</p>
+                     <p class="director">Director: Jon Watts</p>
+                     <p class="stars">Stars: Tom Holland, Samuel L. Jackson, Jake Gyllenhaal, Marisa Tomei</p>
+                     <p class="description"><span>Description: </span>Following the events of Avengers:
+                        Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed
+                        forever.</p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image24"><img src="./images/marvel/img24.webp" alt="" class="image"></a>
+            <div id="image24" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Black widow (2020)</p>
+                     <p class="feature">Action, Adventure, Sci-Fi</p>
+                     <p class="rating">-- /10</p>
+                     <p class="director">Director: Chloé Zhao</p>
+                     <p class="stars">Stars: Angelina Jolie, Richard Madden, Salma Hayek, Gemma Chan</p>
+                     <p class="description"><span>Description: </span></p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image25"><img src="./images/marvel/img25.webp" alt="" class="image"></a>
+            <div id="image25" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Eternals (2021)</p>
+                     <p class="feature">Action, Adventure, Drama </p>
+                     <p class="rating">-- /10</p>
+                     <p class="director">Director: Jon Favreau</p>
+                     <p class="stars">Stars: Scarlett Johansson, Florence Pugh, Robert Downey Jr., Rachel Weisz</p>
+                     <p class="description"><span>Description: </span></p>
+                  </center>
+               </div>
+            </div>
+            <a href="#image26"><img src="./images/marvel/img26.webp" alt="" class="image"></a>
+            <div id="image26" class="modalDialog">
+               <div> <a href="#close" title="Close" class="close">X</a>
+                  <center>
+                     <p class="head">Marvel</p>
+                     <p class="titles">Title: Shang-chi-Marvel (2021)</p>
+                     <p class="feature">Action, Adventure, Fantasy</p>
+                     <p class="rating">-- /10</p>
+                     <p class="director">Director: Destin Daniel Cretton</p>
+                     <p class="stars">Stars: Awkwafina, Simu Liu, Tony Chiu-Wai Leung, Fala Chen</p>
+                     <p class="description"><span>Description: </span></p>
+                  </center>
+               </div>
+            </div>
+         </div>
+
+         <!-- DC WORLD -->
+
+        
+         <div class="container">
+            <div class="row">
+               <h1>DC World</h1>
+               <p>Here are the DC movies listed below</p>
+               <a href="#images1"><img src="./images/DC/img1.webp" alt="" class="image"></a>
+         <div id="images1" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">DC World</p>
+                  <p class="titles">Title: Man of Steel (2013)</p>
+                  <p class="feature">Action, Adventure, Sci-Fi</p>
+                  <p class="rating">6.4/10</p>
+                  <p class="director">Director: Zack Snyder</p>
+                  <p class="stars">Stars:  Henry Cavill, Amy Adams, Michael Shannon, Diane Lane </p>
+                  <p class="description"><span>Description:</span>An alien child is evacuated from his dying world and sent to Earth to live among humans. His peace is threatened, when other survivors of his home planet invade Earth.
+                     </p>
+               </center>
+            </div>
+         </div>
+         <a href="#images2"><img src="./images/DC/img2.webp" alt="" class="image"></a>
+         <div id="images2" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">DC World</p>
+                  <p class="titles">Title: Batman v Superman: Dawn of Justice (2016)</p>
+                  <p class="feature">Action, Adventure, Sci-Fi</p>
+                  <p class="rating">7/10</p>
+                  <p class="director">Director: Zack Snyder</p>
+                  <p class="stars">Stars: Ben Affleck, Henry Cavill, Amy Adams, Jesse Eisenberg</p>
+                  <p class="description"><span>Description:</span>Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.</p>
+               </center>
+            </div>
+         </div>
+         <a href="#images3"><img src="./images/DC/img3.webp" alt="" class="image"></a>
+         <div id="images3" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">DC World</p>
+                  <p class="titles">Title: Suicide Squad (2016)</p>
+                  <p class="feature">Action, Adventure, Fantasy</p>
+                  <p class="rating">6/10</p>
+                  <p class="director">Director: David Ayer</p>
+                  <p class="stars">Stars: Will Smith, Jared Leto, Margot Robbie, Viola Davis</p>
+                  <p class="description"><span>Description:</span>A secret government agency recruits some of the most dangerous incarcerated super-villains to form a defensive task force. Their first mission: save the world from the apocalypse.
+                     </p>
+               </center>
+            </div>
+         </div>
+         <a href="#images4"><img src="./images/DC/img4.webp" alt="" class="image"></a>
+         <div id="images4" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">
+                     DC World</p>
+                  <p class="titles">
+                     Title: Wonder Woman (2017)</p>
+                  <p class="feature">Action, Adventure, Fantasy</p>
+                  <p class="rating">7.4/10</p>
+                  <p class="director">Director: Patty Jenkins</p>
+                  <p class="stars">Stars: Gal Gadot, Chris Pine, Robin Wright, Lucy Davis</p>
+                  <p class="description"><span>Description:</span>When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.</p>
+               </center>
+            </div>
+         </div>
+         <a href="#images5"><img src="./images/DC/img5.webp" alt="" class="image"></a>
+         <div id="images5" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">
+                     DC World</p>
+                  <p class="titles">
+                     Title: Justice League (2017)</p>
+                  <p class="feature">Action, Adventure, Fantasy</p>
+                  <p class="rating">6.4/10</p>
+                  <p class="director">Director: Zack Snyder</p>
+                  <p class="stars">Stars: Ben Affleck, Gal Gadot, Jason Momoa, Ezra Miller
+                  </p>
+                  <p class="description"><span>Description:</span>Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his new-found ally, Diana Prince, to face an even greater enemy.</p>
+               </center>
+            </div>
+         </div>
+         <a href="#images6"><img src="./images/DC/img6.webp" alt="" class="image"></a>
+         <div id="images6" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">
+                     DC World</p>
+                  <p class="titles">
+                     Title: Aquaman (2018)</p>
+                  <p class="feature">Action, Adventure, Fantasy</p>
+                  <p class="rating">7/10</p>
+                  <p class="director">Director: James Wan </p>
+                  <p class="stars">Stars: Jason Momoa, Amber Heard, Willem Dafoe, Patrick
+                  </p>
+                  <p class="description"><span>Description:</span>Arthur Curry (Jason Momoa), the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.</p>
+               </center>
+            </div>
+         </div>
+         <a href="#images7"><img src="./images/DC/img7.webp" alt="" class="image"></a>
+         <div id="images7" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">DC World</p>
+                  <p class="titles">Title: Shazam! (2019)</p>
+                  <p class="feature">Action, Adventure, Comedy</p>
+                  <p class="rating">7.1/10</p>
+                  <p class="director">Director: David F. Sandberg</p>
+                  <p class="stars">Stars: Zachary Levi, Mark Strong, Asher Angel, Jack Dylan Grazer
+                  </p>
+                  <p class="description"><span>Description:</span>A newly fostered young boy in search of his mother instead finds unexpected super powers and soon gains a powerful enemy.</p>
+               </center>
+            </div>
+         </div>
+         <a href="#images8"><img src="./images/DC/img8.webp" alt="" class="image"></a>
+         <div id="images8" class="modalDialogdc">
+            <div> <a href="#close" title="Close" class="close">X</a>
+               <center>
+                  <p class="head">DC World</p>
+                  <p class="titles">Title: Birds of Prey (2020)</p>
+                  <p class="feature">Action, Adventure, Crime</p>
+                  <p class="rating">6.1/10</p>
+                  <p class="director">Director: Cathy Yan</p>
+                  <p class="stars">Stars: Margot Robbie, Rosie Perez, Mary Elizabeth Winstead</p>
+                  <p class="description"><span>Description:</span>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
+               </center>
+            </div>
+         </div>
+            </div>
+         </div>
+         <footer>
+            <p>Copyright © 2020 All rights reserved.</p>
+            <p><a href="https://imprasna.github.io" target="_blank">Prasanna S</a></p>
+          </footer>
+      </div>
+   </div>
+
+
+   <script src="js/main.js"></script>
+   <script>
+      setTimeout(function(){
+         $('.loader-bg').fadeToggle();
+      }, 2000)
+      
+   </script>
+</body>
+
+</html>
